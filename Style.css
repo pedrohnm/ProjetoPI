@@ -1,0 +1,68 @@
+body{
+
+    /* zerei a margin e o padding que são incluidos quando criamos um site */
+    margin: 0;
+    padding: 0;
+    /* Mudei a fonte de todo texto da pagina */
+    font-family: monospace;
+    /* Gradiente de fundo */
+    background-color: #9636E0;
+}
+
+h1{
+
+    /* text-align centraliza todo o texto do lugar selecionado */
+    text-align: center;
+    margin-top: 30px;
+    /* Opacidade do texto */
+    opacity: 70%;
+}
+
+/* Classe do input */
+.inpt{
+
+    margin-top: 15px;
+    margin-left: 18%;
+    width: 300px;
+    margin-bottom: 20px;
+    
+   
+
+}
+
+/* Classe do Buttom */
+.btn{
+
+    /* border:none; tirei todas as bordas do botão */
+    border:none;
+    background-color: #d11bd1;
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+    height: 24px;
+    margin-left: 35%;
+}
+
+/* Hover é uma "Animação que é possivel fazer nos botões, uma rapida mudança de cor quando colocamos o mouse emcima dele" */
+.btn:hover{
+
+    /* Essa propriedade diminui o brilho de um componente, como coloquei 80% ela perde 20% de brilho */
+    filter: brightness(80%);
+
+}
+
+
+/* Classe da div que faz o quadrado do formulario */
+.box{
+
+    width: 500px;
+    height: 450px;
+    background-color: #ffffffea;
+    /* Border-radius arredonda os cantos da div */
+    border-radius: 2%;
+    /* Com o auto deixei as margens laterais com medidas automaticas para centralizar */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 85px;
+
+}

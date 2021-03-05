@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Css/Style.css">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <!-- Div box para centralizar todo o formulario -->
+        <div class="box">
+            <br>
+            <h1>Investimento Em Sensores</h1>
+            
+            <!-- Para criar inputs sempre use a classe que "inpt" que criei para manter um padrão entre todos -->
+            <input class="inpt" type="text" id="qtdFreezer" placeholder="Quantidade de freezers">
+            <br>
+            <!-- Para criar button sempre use a classe que "btn" que criei para manter um padrão entre todos -->
+            <button  class="btn" onclick="calcular()">Calcular</button>
+        
+        <script>
+
+            // Criando variaveis dentro da função
+
+            function calcular(){
+
+                // Criando variaveis dentro da função
+                var freezers = Number(qtdFreezer.value);
+                // Calculo do valor de sensores por freezer
+                var valorSensores = Number((freezers*2)*70.00);
+                //  Exibir resultado
+                alert("O valor total é R$"+valorSensores);
+
+            }
+
+        </script>
+    </body>
+</html>
