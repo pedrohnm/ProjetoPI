@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="Css/Style.css">
-        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <title>Simulador Financeiro - PI - Sprint 1</title>
     </head>
     <body>
 
@@ -19,10 +19,20 @@
             <br>
             <!-- Para criar button sempre use a classe que "btn" que criei para manter um padrão entre todos -->
             <button  class="btn" onclick="calcular()">Calcular</button>
+            
+
+            <!-- Segunda etapa do simulador -->
+            <h1>Perda média por falta de controle de temperatura</h1>
+            <input class="inpt" type="text" id="qtdCarne" placeholder="Quantidade de carne (kg) adquirida por mês">
+            <input class="inpt" type="text" id="preçoCarne" placeholder="Preço médio (em R$) da carne por kg">            
+            <br>
+
+            <button  class="btn" onclick="calcularPerdas()">Calcular</button>
+            
         
         <script>
 
-            // Criando variaveis dentro da função
+        
 
             function calcular(){
 
@@ -31,8 +41,21 @@
                 // Calculo do valor de sensores por freezer
                 var valorSensores = Number((freezers*2)*70.00);
                 //  Exibir resultado
-                alert("O valor total é R$"+valorSensores);
+                alert("O valor total dos sensores é R$"+valorSensores);
+            }
 
+
+            function calcularPerdas() {
+                                
+                // Criando novas variáveis para a segunda parte do simulador
+                var carnekg = Number(qtdCarne.value);
+                var valorkg = Number(preçoCarne.value);
+                // Calculando os percentuais médios das Quebras Operacionais que levam à perda do produto.
+                // Os percentuais de cada fator de quebra operacional (que nos interessa) estão dispostos na Contextualização que fizemos no Trello.
+                var perdaskg = carnekg*0.114;        
+                var perdasFinanceiras = (carnekg*valorkg)*0.114;
+                // Exibindo o resultado
+                alert ("A perda média será de "+perdaskg+" kg, representando um valor de "+perdasFinanceiras+" R$");
             }
 
         </script>
