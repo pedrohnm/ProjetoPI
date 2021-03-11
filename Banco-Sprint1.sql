@@ -1,3 +1,4 @@
+
 create database sprint1;
 use sprint1;
 
@@ -44,7 +45,7 @@ create table central(
     msgFalhaRefrigeracao varchar(150)
 );
 
-INSERT INTO empresa (nome,endereco, cnpj, mediaDescarte) VALUES 
+INSERT INTO Empresa (nome,endereco, cnpj, mediaDescarte) VALUES 
 					('Friboi','Av. Marginal Direita do Tietê, 500 - Vila Jaguara, São Paulo', '02.916.265/0001-60', '15%'),
                     ('Swift','R. Cristóvão de Gouvêia, 320 - Parque Anhanguera, São Paulo ', '36.425.014/0001-02', '12%'),
                     ('Gold Meat', 'Estr. Velha de Itu, 654-982 - Jardim Alvorada, Jandira - SP', '01.543.135/0001-34', '10%'),
@@ -91,5 +92,4 @@ Drop database sprint1;
 
 -- Deletar cliente de id 3
 DELETE FROM empresa
-WHERE id = 3;                    
-                   
+WHERE id = 3;               
