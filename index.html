@@ -19,7 +19,7 @@
             <br>
             <!-- Para criar button sempre use a classe que "btn" que criei para manter um padrão entre todos -->
             <button  class="btn" onclick="calcular()">Calcular</button>
-            <span class="result" id="qtd_freezers" ></span>
+            <div class="result" id="qtd_freezers" style="text-align: center;"></div>
             
 
             <!-- Segunda etapa do simulador -->
@@ -30,7 +30,7 @@
             <br>
 
             <button  class="btn" onclick="calcularPerdas()">Calcular</button>
-            <span class="result" id="span_result" ></span>
+            <div class="result" id="span_result" style="text-align: center"></div>
         
         <script>
 
@@ -43,7 +43,7 @@
                 // Calculo do valor de sensores por freezer
                 var valorSensores = Number((freezers*2)*70.00);
                 //  Exibir resultado
-                qtd_freezers.innerHTML = ( "<br> <br> O valor total dos sensores é R$ "+valorSensores);
+                qtd_freezers.innerHTML = `<br> O valor total dos sensores é R$ ${valorSensores}`
             }
 
 
@@ -57,7 +57,7 @@
                 var perdaskg = carnekg*0.114;        
                 var perdasFinanceiras = (carnekg*valorkg)*0.114;
                 // Exibindo o resultado
-                span_result.innerHTML = ("<br> <br> A perda média será de "+perdaskg+" kg, representando um valor de "+perdasFinanceiras+" R$");
+                span_result.innerHTML = `<br> <br> A perda média será de ${perdaskg} kg, representando um valor de R$ ${perdasFinanceiras} `;
             }
 
         </script>

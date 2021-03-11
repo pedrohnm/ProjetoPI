@@ -22,11 +22,10 @@ h1{
 .inpt{
 
     margin-top: 15px;
-    margin-left: 18%;
+    margin-left: 23%;
     width: 300px;
     margin-bottom: 20px;
     
-   
 
 }
 
@@ -55,21 +54,21 @@ h1{
 /* Classe da div que faz o quadrado do formulario */
 .box{
 
-    width: 530px;
-    height: 530px;
+    width: 535px;
+    height: 535px;
     background-color: #ffffffea;
     /* Border-radius arredonda os cantos da div */
     border-radius: 2%;
     /* Com o auto deixei as margens laterais com medidas automaticas para centralizar */
     margin-left: auto;
     margin-right: auto;
-    margin-top: 85px;
+    margin-top: 40px;
 
 }
 /* tamanho fonte dos resultados */
 .result { 
 font-size: 15px;
-font-family: 'Times New Roman', Times, serif;
+font-family: monospace;
 
 
 }
